@@ -10,7 +10,8 @@
     ],
     "correct_answer": "A",
     "explanation": "Terraform is primarily designed to provide Infrastructure as Code (IaC) capabilities, allowing you to define and provision infrastructure using declarative configuration files.",
-    "domain": "IaC Concepts"
+    "domain": "IaC Concepts",
+    "documentation_link": "https://developer.hashicorp.com/terraform/intro"
   },
   {
     "id": 2,
@@ -23,7 +24,8 @@
     ],
     "correct_answer": "B",
     "explanation": "The 'terraform init' command initializes a working directory containing Terraform configuration files. It downloads required providers and sets up the backend.",
-    "domain": "CLI"
+    "domain": "CLI",
+    "documentation_link": "https://developer.hashicorp.com/terraform/cli/commands/init"
   },
   {
     "id": 3,
@@ -36,7 +38,8 @@
     ],
     "correct_answer": "A",
     "explanation": "Terraform configuration files use the .tf extension. While .tf.json is also supported for JSON syntax, .tf is the standard extension for HCL (HashiCorp Configuration Language) files.",
-    "domain": "IaC Concepts"
+    "domain": "IaC Concepts",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/files"
   },
   {
     "id": 4,
@@ -49,7 +52,8 @@
     ],
     "correct_answer": "B",
     "explanation": "The 'terraform plan' command creates an execution plan, showing what actions Terraform will take to reach the desired state defined in the configuration files.",
-    "domain": "CLI"
+    "domain": "CLI",
+    "documentation_link": "https://developer.hashicorp.com/terraform/cli/commands/plan"
   },
   {
     "id": 5,
@@ -62,7 +66,8 @@
     ],
     "correct_answer": "B",
     "explanation": "The Terraform state file is used to track resource metadata and map Terraform resources to real-world infrastructure. It helps Terraform understand what it has created and manage updates.",
-    "domain": "State"
+    "domain": "State",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/state"
   },
   {
     "id": 6,
@@ -75,7 +80,8 @@
     ],
     "correct_answer": "B",
     "explanation": "Variables in Terraform are defined using the 'variable' block. This allows you to parameterize your configurations and make them reusable.",
-    "domain": "Variables"
+    "domain": "Variables",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/values/variables"
   },
   {
     "id": 7,
@@ -88,7 +94,8 @@
     ],
     "correct_answer": "C",
     "explanation": "The default filename for Terraform state is 'terraform.tfstate'. This file is created in the working directory and contains the current state of your infrastructure.",
-    "domain": "State"
+    "domain": "State",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/state"
   },
   {
     "id": 8,
@@ -101,7 +108,8 @@
     ],
     "correct_answer": "B",
     "explanation": "The 'terraform apply' command applies the changes required to reach the desired state of the configuration. It executes the actions proposed in a Terraform plan.",
-    "domain": "CLI"
+    "domain": "CLI",
+    "documentation_link": "https://developer.hashicorp.com/terraform/cli/commands/apply"
   },
   {
     "id": 9,
@@ -114,7 +122,8 @@
     ],
     "correct_answer": "C",
     "explanation": "A Terraform module is a collection of connected resources that are used together. Modules are used to create reusable components in Terraform and organize configuration into logical groups.",
-    "domain": "Modules"
+    "domain": "Modules",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/modules"
   },
   {
     "id": 10,
@@ -127,7 +136,8 @@
     ],
     "correct_answer": "D",
     "explanation": "Both ${var.variable_name} (interpolation syntax) and var.variable_name (new syntax in Terraform 0.12+) are correct ways to reference variable values in Terraform configuration.",
-    "domain": "Variables"
+    "domain": "Variables",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/expressions/types"
   },
   {
     "id": 11,
@@ -140,7 +150,8 @@
     ],
     "correct_answer": "B",
     "explanation": "The 'terraform destroy' command destroys all resources managed by the Terraform configuration. It's essentially the opposite of 'terraform apply'.",
-    "domain": "CLI"
+    "domain": "CLI",
+    "documentation_link": "https://developer.hashicorp.com/terraform/cli/commands/destroy"
   },
   {
     "id": 12,
@@ -153,7 +164,8 @@
     ],
     "correct_answer": "B",
     "explanation": "The 'provider' block is used to configure providers in Terraform. Providers are responsible for understanding API interactions and exposing resources.",
-    "domain": "Providers"
+    "domain": "Providers",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/providers/configuration"
   },
   {
     "id": 13,
@@ -166,7 +178,8 @@
     ],
     "correct_answer": "C",
     "explanation": "The terraform.tfvars file is used to set specific values for variables. It's automatically loaded by Terraform and allows you to provide concrete values for your variable definitions.",
-    "domain": "Variables"
+    "domain": "Variables",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/values/variables#variable-definitions-tfvars-files"
   },
   {
     "id": 14,
@@ -179,7 +192,8 @@
     ],
     "correct_answer": "B",
     "explanation": "The 'terraform show' command shows the current state or a saved plan in a human-readable format. It can display the current state file or examine a plan file.",
-    "domain": "CLI"
+    "domain": "CLI",
+    "documentation_link": "https://developer.hashicorp.com/terraform/cli/commands/show"
   },
   {
     "id": 15,
@@ -192,7 +206,8 @@
     ],
     "correct_answer": "A",
     "explanation": "Remote state in Terraform refers to storing the state file on a remote server or cloud service (like S3, Azure Storage, etc.) instead of locally. This enables team collaboration and provides better security and reliability.",
-    "domain": "State"
+    "domain": "State",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/state"
   },
   {
     "id": 16,
@@ -205,7 +220,8 @@
     ],
     "correct_answer": "A",
     "explanation": "Modules are called in Terraform using the 'module' block. This allows you to use a module and pass input variables to it.",
-    "domain": "Modules"
+    "domain": "Modules",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/modules"
   },
   {
     "id": 17,
@@ -218,7 +234,8 @@
     ],
     "correct_answer": "A",
     "explanation": "Output values in Terraform are used to display information about resources after they are created. They can also be used to share data between different Terraform configurations or modules.",
-    "domain": "Variables"
+    "domain": "Variables",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/values/outputs"
   },
   {
     "id": 18,
@@ -231,7 +248,8 @@
     ],
     "correct_answer": "B",
     "explanation": "The 'terraform validate' command validates the configuration files in a directory, referring only to the configuration and not accessing any remote services.",
-    "domain": "CLI"
+    "domain": "CLI",
+    "documentation_link": "https://developer.hashicorp.com/terraform/cli/commands/validate"
   },
   {
     "id": 19,
@@ -244,7 +262,8 @@
     ],
     "correct_answer": "B",
     "explanation": "State locking in Terraform prevents concurrent operations on the same state file to avoid corruption. It ensures that only one Terraform operation can run at a time against a particular state.",
-    "domain": "State"
+    "domain": "State",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/state#locking"
   },
   {
     "id": 20,
@@ -257,7 +276,8 @@
     ],
     "correct_answer": "B",
     "explanation": "Terraform Cloud is primarily used for remote operations, state management, and team collaboration. It provides a managed service for running Terraform with features like remote state storage, policy enforcement, and team workflows.",
-    "domain": "Terraform Cloud"
+    "domain": "Terraform Cloud",
+    "documentation_link": "https://developer.hashicorp.com/terraform/cloud"
   },
   {
     "id": 21,
@@ -270,7 +290,8 @@
     ],
     "correct_answer": "B",
     "explanation": "The 'terraform fmt' command formats Terraform configuration files to a canonical format and style. It's useful for maintaining consistent code formatting across teams.",
-    "domain": "CLI"
+    "domain": "CLI",
+    "documentation_link": "https://developer.hashicorp.com/terraform/cli/commands/fmt"
   },
   {
     "id": 22,
@@ -283,7 +304,8 @@
     ],
     "correct_answer": "B",
     "explanation": "Data sources in Terraform are used to read information from existing infrastructure or external systems. They allow you to reference data that exists outside of your Terraform configuration.",
-    "domain": "Data Sources"
+    "domain": "Data Sources",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/data-sources"
   },
   {
     "id": 23,
@@ -296,7 +318,8 @@
     ],
     "correct_answer": "B",
     "explanation": "The '.terraform.lock.hcl' file is automatically created when you run 'terraform init'. This file locks provider versions to ensure consistent provider versions across team members.",
-    "domain": "CLI"
+    "domain": "CLI",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/settings/providers#provider-versions"
   },
   {
     "id": 24,
@@ -309,7 +332,8 @@
     ],
     "correct_answer": "A",
     "explanation": "HCL stands for HashiCorp Configuration Language. It's the language used to write Terraform configuration files and is designed to be both human and machine-readable.",
-    "domain": "IaC Concepts"
+    "domain": "IaC Concepts",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/hcl"
   },
   {
     "id": 25,
@@ -322,7 +346,8 @@
     ],
     "correct_answer": "B",
     "explanation": "The 'count' meta-argument can be used to create multiple instances of a resource. When count is set to a number greater than 1, Terraform will create that many instances of the resource.",
-    "domain": "Resources"
+    "domain": "Resources",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/meta-arguments/count"
   },
   {
     "id": 26,
@@ -335,7 +360,8 @@
     ],
     "correct_answer": "A",
     "explanation": "The 'depends_on' meta-argument is used to specify explicit dependencies between resources when the dependency cannot be automatically inferred by Terraform.",
-    "domain": "Resources"
+    "domain": "Resources",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/meta-arguments/depends_on"
   },
   {
     "id": 27,
@@ -348,7 +374,8 @@
     ],
     "correct_answer": "B",
     "explanation": "The 'terraform state list' command shows all resources in your Terraform state file. It provides a list of all resources currently tracked by Terraform.",
-    "domain": "State"
+    "domain": "State",
+    "documentation_link": "https://developer.hashicorp.com/terraform/cli/commands/state/list"
   },
   {
     "id": 28,
@@ -361,7 +388,8 @@
     ],
     "correct_answer": "B",
     "explanation": "If you remove a resource from your Terraform configuration, Terraform will plan to destroy that resource the next time you run 'terraform apply', since it's no longer defined in the desired state.",
-    "domain": "Resources"
+    "domain": "Resources",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/resources/state"
   },
   {
     "id": 29,
@@ -374,7 +402,8 @@
     ],
     "correct_answer": "B",
     "explanation": "Input variables defined with the 'variable' block can have default values that can be overridden by providing values through terraform.tfvars files, command-line flags, or environment variables.",
-    "domain": "Variables"
+    "domain": "Variables",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/values/variables"
   },
   {
     "id": 30,
@@ -387,7 +416,8 @@
     ],
     "correct_answer": "B",
     "explanation": "Local values (locals) are used to assign a name to an expression, allowing you to reuse it multiple times within a module without repeating the expression.",
-    "domain": "Variables"
+    "domain": "Variables",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/values/locals"
   },
   {
     "id": 31,
@@ -400,7 +430,8 @@
     ],
     "correct_answer": "C",
     "explanation": "The 'local' backend stores state locally on disk in the terraform.tfstate file. This is the default backend when no backend configuration is specified.",
-    "domain": "State"
+    "domain": "State",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/settings/backends/local"
   },
   {
     "id": 32,
@@ -413,7 +444,8 @@
     ],
     "correct_answer": "B",
     "explanation": "Remote state provides better security by storing sensitive state data remotely and enables team collaboration by allowing multiple team members to work with the same state.",
-    "domain": "State"
+    "domain": "State",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/state"
   },
   {
     "id": 33,
@@ -426,7 +458,8 @@
     ],
     "correct_answer": "B",
     "explanation": "The 'terraform' block is used to specify required providers, Terraform version constraints, and other settings. Within this block, you use 'required_providers' to specify provider requirements.",
-    "domain": "Providers"
+    "domain": "Providers",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/providers/configuration"
   },
   {
     "id": 34,
@@ -439,7 +472,8 @@
     ],
     "correct_answer": "B",
     "explanation": "In Terraform plan output, a '+' symbol indicates that a resource will be created. This means Terraform will add a new resource that doesn't currently exist.",
-    "domain": "CLI"
+    "domain": "CLI",
+    "documentation_link": "https://developer.hashicorp.com/terraform/cli/commands/plan"
   },
   {
     "id": 35,
@@ -452,7 +486,8 @@
     ],
     "correct_answer": "C",
     "explanation": "In Terraform plan output, a '-' symbol indicates that a resource will be destroyed. This means Terraform will delete an existing resource.",
-    "domain": "CLI"
+    "domain": "CLI",
+    "documentation_link": "https://developer.hashicorp.com/terraform/cli/commands/plan"
   },
   {
     "id": 36,
@@ -465,7 +500,8 @@
     ],
     "correct_answer": "B",
     "explanation": "The 'terraform import' command is used to import existing infrastructure into Terraform state, allowing you to manage resources that were created outside of Terraform.",
-    "domain": "State"
+    "domain": "State",
+    "documentation_link": "https://developer.hashicorp.com/terraform/cli/commands/import"
   },
   {
     "id": 37,
@@ -478,7 +514,8 @@
     ],
     "correct_answer": "B",
     "explanation": "The lifecycle meta-argument is used to control resource creation and destruction behavior, such as preventing destruction, creating before destroying, or ignoring changes to certain attributes.",
-    "domain": "Resources"
+    "domain": "Resources",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/meta-arguments/lifecycle"
   },
   {
     "id": 38,
@@ -491,7 +528,8 @@
     ],
     "correct_answer": "C",
     "explanation": "The terraform.tfstate file should be added to .gitignore because it contains sensitive information about your infrastructure and should not be stored in version control.",
-    "domain": "State"
+    "domain": "State",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/state"
   },
   {
     "id": 39,
@@ -504,7 +542,8 @@
     ],
     "correct_answer": "A",
     "explanation": "The for_each meta-argument is used to iterate over a map or set and create multiple instances of a resource, with each instance corresponding to an item in the map or set.",
-    "domain": "Resources"
+    "domain": "Resources",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/meta-arguments/for_each"
   },
   {
     "id": 40,
@@ -517,7 +556,8 @@
     ],
     "correct_answer": "D",
     "explanation": "Terraform uses 'number' as the type for numeric values, not 'integer'. The basic types in Terraform are string, number, and boolean.",
-    "domain": "Variables"
+    "domain": "Variables",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/expressions/types"
   },
   {
     "id": 41,
@@ -530,7 +570,8 @@
     ],
     "correct_answer": "B",
     "explanation": "Workspaces in Terraform allow you to manage multiple environments (like dev, staging, prod) using the same configuration files but with separate state files.",
-    "domain": "Workspaces"
+    "domain": "Workspaces",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/workspaces"
   },
   {
     "id": 42,
@@ -543,7 +584,8 @@
     ],
     "correct_answer": "A",
     "explanation": "The 'terraform workspace show' command displays the name of the current workspace. You can also use 'terraform workspace list' to see all workspaces with the current one marked.",
-    "domain": "Workspaces"
+    "domain": "Workspaces",
+    "documentation_link": "https://developer.hashicorp.com/terraform/cli/commands/workspace/show"
   },
   {
     "id": 43,
@@ -556,7 +598,8 @@
     ],
     "correct_answer": "A",
     "explanation": "Provider aliases allow you to use multiple configurations of the same provider within a single configuration, such as deploying to multiple AWS regions or accounts.",
-    "domain": "Providers"
+    "domain": "Providers",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/providers/configuration#aliases"
   },
   {
     "id": 44,
@@ -569,7 +612,8 @@
     ],
     "correct_answer": "B",
     "explanation": "When you run 'terraform apply' without a saved plan, Terraform automatically runs the planning phase first and shows you the plan before asking for confirmation to apply the changes.",
-    "domain": "CLI"
+    "domain": "CLI",
+    "documentation_link": "https://developer.hashicorp.com/terraform/cli/commands/apply"
   },
   {
     "id": 45,
@@ -582,7 +626,8 @@
     ],
     "correct_answer": "B",
     "explanation": "The file() function in Terraform reads the contents of a file at the given path and returns it as a string. This is useful for reading configuration files, scripts, or other text files.",
-    "domain": "Functions"
+    "domain": "Functions",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/functions/file"
   },
   {
     "id": 46,
@@ -595,7 +640,8 @@
     ],
     "correct_answer": "B",
     "explanation": "The templatefile() function reads a file from the specified path and renders it as a template using variables provided as the second argument.",
-    "domain": "Functions"
+    "domain": "Functions",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/functions/templatefile"
   },
   {
     "id": 47,
@@ -608,7 +654,8 @@
     ],
     "correct_answer": "A",
     "explanation": "The 'terraform state rm' command removes a resource from the Terraform state file without destroying the actual infrastructure. The resource will no longer be managed by Terraform.",
-    "domain": "State"
+    "domain": "State",
+    "documentation_link": "https://developer.hashicorp.com/terraform/cli/commands/state/rm"
   },
   {
     "id": 48,
@@ -621,7 +668,8 @@
     ],
     "correct_answer": "B",
     "explanation": "The 'count' meta-argument uses a number to create multiple instances (indexed by number), while 'for_each' uses a map or set to create instances (indexed by the map key or set value).",
-    "domain": "Resources"
+    "domain": "Resources",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/meta-arguments/count"
   },
   {
     "id": 49,
@@ -634,7 +682,8 @@
     ],
     "correct_answer": "A",
     "explanation": "After running 'terraform init', downloaded provider plugins are stored in the '.terraform/providers' directory within your working directory.",
-    "domain": "Providers"
+    "domain": "Providers",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/settings/providers#provider-versions"
   },
   {
     "id": 50,
@@ -647,7 +696,8 @@
     ],
     "correct_answer": "B",
     "explanation": "The 'sensitive' argument in variable blocks prevents Terraform from displaying the variable's value in logs, console output, or UI to protect sensitive information like passwords or API keys.",
-    "domain": "Variables"
+    "domain": "Variables",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/values/variables#sensitive-variables"
   },
   {
     "id": 51,
@@ -660,7 +710,8 @@
     ],
     "correct_answer": "B",
     "explanation": "The 'terraform init -upgrade' command upgrades provider versions according to the version constraints specified in your configuration while updating the lock file.",
-    "domain": "Providers"
+    "domain": "Providers",
+    "documentation_link": "https://developer.hashicorp.com/terraform/cli/commands/init#upgrade"
   },
   {
     "id": 52,
@@ -673,7 +724,8 @@
     ],
     "correct_answer": "B",
     "explanation": "The 'terraform refresh' command updates the state file with the real-world state of your infrastructure, helping to identify drift between your state and actual resources.",
-    "domain": "State"
+    "domain": "State",
+    "documentation_link": "https://developer.hashicorp.com/terraform/cli/commands/refresh"
   },
   {
     "id": 53,
@@ -686,7 +738,8 @@
     ],
     "correct_answer": "B",
     "explanation": "Terraform modules can be sourced from various locations including the Terraform Registry, Git repositories, HTTP URLs, local file paths, and more.",
-    "domain": "Modules"
+    "domain": "Modules",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/modules"
   },
   {
     "id": 54,
@@ -699,7 +752,8 @@
     ],
     "correct_answer": "A",
     "explanation": "Version constraints in Terraform ensure that you use consistent and compatible versions of providers and modules across different environments and team members.",
-    "domain": "Providers"
+    "domain": "Providers",
+    "documentation_link": "https://developer.hashicorp.com/terraform/language/providers/configuration#version"
   },
   {
     "id": 55,
@@ -712,6 +766,7 @@
     ],
     "correct_answer": "B",
     "explanation": "The 'terraform validate' command validates the syntax and internal consistency of Terraform configuration files, but it does not check if resources exist in the actual infrastructure.",
-    "domain": "CLI"
+    "domain": "CLI",
+    "documentation_link": "https://developer.hashicorp.com/terraform/cli/commands/validate"
   }
 ] 
