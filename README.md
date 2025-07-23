@@ -1,5 +1,14 @@
 # Terraform Cert Prep
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Docker](https://img.shields.io/badge/Docker-Compose-blue.svg)](https://docs.docker.com/compose/)
+[![React](https://img.shields.io/badge/React-18-61dafb.svg)](https://reactjs.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-Python-009688.svg)](https://fastapi.tiangolo.com/)
+[![Terraform](https://img.shields.io/badge/Terraform-Associate-623ce4.svg)](https://www.hashicorp.com/certification/terraform-associate)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+[![GitHub stars](https://img.shields.io/github/stars/amar-r/terraform-cert-prep.svg)](https://github.com/amar-r/terraform-cert-prep/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/amar-r/terraform-cert-prep.svg)](https://github.com/amar-r/terraform-cert-prep/network)
+
 A full-stack web application that simulates the HashiCorp Certified: Terraform Associate exam experience.
 
 ## Features
