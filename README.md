@@ -53,4 +53,12 @@ The application uses volume mounting for hot reloading during development.
 - State management
 - Variables and outputs
 - Modules and providers
-- Terraform Cloud/Enterprise features 
+- Terraform Cloud/Enterprise features
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests to improve the question database, add new features, or fix bugs. 
