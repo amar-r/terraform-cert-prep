@@ -36,7 +36,7 @@ A full-stack web application that simulates the HashiCorp Certified: Terraform A
 
 ```bash
 cd terraform-cert-prep
-docker-compose up --build
+docker compose up --build
 ```
 
 4. Open your browser and navigate to `http://localhost:3000`
